@@ -8,7 +8,7 @@ local _DIRNAME="${0:h}"
 if (( $+commands[exa] )); then
   typeset -g exa_params
   # Use exa
-  exa_params=('--git' '--icons' '--classify' '--group-directories-first' '--time-style=long-iso' '--group' '--color-scale')
+  exa_params=('--git' '--classify' '--group-directories-first' '--time-style=long-iso' '--group' '--color-scale')
   
   function ls(){
     exa ${exa_params} $@
